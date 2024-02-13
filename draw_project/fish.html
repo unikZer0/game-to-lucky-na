@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mycanvas {
+        border: 1px solid #000;
+    }
+</style>
+<body>
+    <canvas id="mycanvas" width="570" height="900"></canvas>
+    <script>
+        let u = document.getElementById("mycanvas");
+        let d = u.getContext("2d");
+
+
+        // to
+        d.beginPath();
+        d.lineTo(300,300);
+        d.lineTo(300,300);
+        d.quadraticCurveTo(-100,200,250,120);
+        d.bezierCurveTo(340,20,288,19,288,270);
+        d.fillStyle="#9452bd";
+        d.fill();
+        d.closePath();
+        d.stroke();
+        //detail
+
+        d.beginPath();
+        d.lineTo(255,120);
+        d.quadraticCurveTo(220,170,260,265);
+        // d.closePath();
+        d.fillStyle="#47215e";
+        d.fill();
+        d.stroke();
+        // hong keep
+
+        d.moveTo(130,160);
+        d.quadraticCurveTo(200,140,160,240);
+        d.stroke();
+
+        //kee
+        d.beginPath()
+        d.moveTo(180,170);
+        d.bezierCurveTo(340,80,258,200,180,215);
+        d.fillStyle="#601b8b";
+        d.fill();
+        d.stroke();
+
+        //details
+        d.moveTo(255,160);
+        d.lineTo(190,200);
+        d.stroke()
+
+        d.moveTo(250,155);
+        d.lineTo(185,185);
+        d.stroke()
+        //kee loum
+
+        d.beginPath();
+        d.moveTo(150,250);
+        d.lineTo(200,300);
+        d.bezierCurveTo(240,280,258,300,180,255);
+        d.fillStyle="#3d0d5b";
+        d.fill();
+        //narm loum
+
+        d.beginPath();
+        d.moveTo(280,275);
+        d.lineTo(170,250);
+        d.closePath();
+        d.stroke();
+        //details
+        d.moveTo(170,260);
+        d.lineTo(205,290);
+        d.stroke()
+        d.moveTo(175,260);
+        d.lineTo(215,285);
+        d.stroke()
+//park
+        d.beginPath();
+        d.arc(89,204,3,0,2*Math.PI/1);
+        d.fillStyle="#00000";
+        d.fill();
+        d.closePath();
+        d.stroke();
+        // ta
+
+        d.beginPath();
+        d.arc(120,190,5,0,2*Math.PI/1);
+        d.fillStyle="white";
+        d.fill();
+        d.closePath();
+        d.stroke()
+
+        d.beginPath();
+        d.arc(118,192,2,0,2*Math.PI/1);
+        d.lineWidth="3";
+        d.fillstyle="black";
+        d.fill();
+        d.stroke();
+        
+    </script>
+</body>
+</html>

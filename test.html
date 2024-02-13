@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Counter</title>
+</head>
+<body>
+
+<h1>Point Counter</h1>
+
+<p>Points: <span id="points">0</span></p>
+
+<button onclick="incrementPoints()">Add Point</button>
+
+<script>
+    // Initialize points variable
+    let points = 0;
+
+    // Function to increment points
+    function incrementPoints() {
+        points++;
+        // Update the points display
+        document.getElementById('points').innerText = points;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: 'Saysettha Ot';">ທ້າວ ບຸນຮຽງ ສົມພົງ ຫ້ອງ 2CW3</h1>
+    <canvas id="test" width="1024" height="1024" style="border: 1px solid red;"></canvas>
+    <script>var c=document.getElementById("test");
+        var ct= c.getContext("2d");
+        
+        function drawstar(){
+        ct.beginPath();
+        ct.arc(300,150,100,5*Math.PI/6,Math.PI/6);
+        ct.fillStyle="blue";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(300,150,70,0,2*Math.PI);
+        ct.fillStyle="#FFFFFF";
+        ct.fill();
+        ct.stroke();//ສ່ວນໂຄງຫົວ
+    
+        //ສວນຕາ
+        ct.beginPath();
+        ct.arc(275,95,25,0,2*Math.PI);       
+        ct.fillStyle="#FFFFFF";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(325,95,25,0,2*Math.PI);        
+        ct.fillStyle="#FFFFFF";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(315,105,2,0,2*Math.PI);     
+        ct.fillStyle="#000";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(315,105,2,0,2*Math.PI);      
+        ct.fillStyle="#000";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(285,105,2,0,2*Math.PI);      
+        ct.fillStyle="#000";
+        ct.fill();
+        ct.stroke();//ສ່ວນຕາ
+        //ສວນດັງແລະໜວດ
+        ct.beginPath();
+        ct.arc(300,120,9,0,2*Math.PI);       
+        ct.fillStyle="red";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(300,130);
+        ct.lineTo(300,180);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(300,180);
+        ct.lineTo(350,155);
+        ct.strokeStyle="#000";
+        ct.stroke();
+    
+        ct.beginPath();
+        ct.moveTo(250,155);
+        ct.lineTo(300,180);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        //ໜວດຂວາ
+        ct.beginPath();
+        ct.moveTo(245,128);
+        ct.lineTo(280,133);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(240,137);
+        ct.lineTo(280,140);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(240,150);
+        ct.lineTo(280,148);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        //ວດຊ້າຍ
+        ct.beginPath();
+        ct.moveTo(355,128);
+        ct.lineTo(320,133);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(360,137);
+        ct.lineTo(320,140);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(360,150);
+        ct.lineTo(320,148);
+        ct.strokeStyle="#000";
+        ct.stroke();
+
+        //ຂນຂວາ
+        ct.beginPath();
+        ct.moveTo(160,250);
+        ct.lineTo(170,270);
+        ct.lineTo(160,250);
+        ct.lineTo(170,270);
+        ct.lineTo(210,250);
+        ct.lineTo(210,200);
+        ct.closePath();
+        ct.fillStyle="blue";
+        ct.fill();
+        ct.strokeStyle="blue";
+        ct.stroke();
+        //ຂນຊ້າຍ
+        ct.beginPath();
+        ct.moveTo(440,250);
+        ct.lineTo(430,270);
+        ct.lineTo(440,250);
+        ct.lineTo(430,270);
+        ct.lineTo(390,250);
+        ct.lineTo(390,200);
+        ct.closePath();
+        ct.fillStyle="blue";
+        ct.fill();
+        ct.stroke();
+        //ມັດ1
+        ct.beginPath();
+        ct.arc(170,255,22,0,2*Math.PI);     
+        ct.fillStyle="#ffffff";
+        ct.fill();
+        ct.strokeStyle="black";
+        ct.stroke();
+        //ມັດ1
+        ct.beginPath();
+        ct.arc(430,255,22,0,2*Math.PI);     
+        ct.fillStyle="#ffffff";
+        ct.fill();
+        ct.strokeStyle="black";
+        ct.stroke();
+        //ຕວ1
+        ct.beginPath();
+        ct.rect(210,210,180,135);
+        ct.fillStyle="blue";
+        ct.fill();
+        // ຫນ້າທ້ອງ
+        ct.beginPath();
+        ct.arc(300,250,70,7*Math.PI/4,5*Math.PI/4);       
+        ct.fillStyle="#ffffff";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(300,250,50,2*Math.PI,Math.PI);       
+        ct.fillStyle="#ffffff";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(250,250);
+        ct.lineTo(350,250);
+        ct.stroke();
+        //ອກຄໍ
+        ct.beginPath();
+        ct.rect(210,200,180,10);
+        ct.fillStyle="red";
+        ct.fill();
+        ct.stroke();
+        //ກະດິ່ງ
+        ct.beginPath();
+        ct.arc(300,215,13,0,2*Math.PI);       
+        ct.fillStyle="yellow";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.rect(290,205,20,5);
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(300,217,4,0,2*Math.PI);
+        ct.fillStyle="black";
+        ct.fill();
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(300,220);
+        ct.lineTo(300,230);
+        ct.strokeStyle="#000";
+        ct.stroke();
+        //ຕນ
+        ct.beginPath();
+        ct.arc(210,367,22,Math.PI/2,3*Math.PI/2);
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(390,367,22,3*Math.PI/2,Math.PI/2);
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(210,389);
+        ct.lineTo(390,389);
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(300,330);
+        ct.lineTo(300,389);
+        ct.stroke();
+        ct.beginPath();
+        ct.moveTo(290,330);
+        ct.lineTo(310,330);
+        ct.stroke();
+            
+        }
+        function drawTree(){
+        
+            ct.beginPath();
+        ct.moveTo(605,420);
+        ct.bezierCurveTo(660, 410, 650, 400,660,375);
+        ct.quadraticCurveTo(640, 375, 620, 375);
+        ct.fillStyle="blue";
+        ct.fill();
+        ct.stroke();
+
+
+        //ໂຕໃສ່ຊຸດສະລາມ
+        ct.beginPath();
+        ct.moveTo(525, 217);
+        ct.bezierCurveTo(526, 210, 690, 250 ,600,430);
+        ct.quadraticCurveTo(520, 530, 400, 405);
+        ct.bezierCurveTo(380,395,300, 365, 380, 380);
+        ct.quadraticCurveTo(370, 370, 380,340);
+        ct.lineTo(375,320);
+        ct.bezierCurveTo(440,365,380, 370, 430, 400);
+        ct.quadraticCurveTo(450, 390, 455, 380);
+        ct.bezierCurveTo(410, 310, 420, 340, 390, 300);
+        ct.quadraticCurveTo(400, 290, 475, 310);
+        ct.quadraticCurveTo(500,220,530,215);
+        ct.closePath();
+        ct.fillStyle="blue";
+        ct.fill();
+        ct.stroke();
+
+        //ຫນ້າທ້ອງ
+        ct.beginPath();
+        ct.moveTo(455,452);
+        ct.quadraticCurveTo(500, 410, 495, 400);
+        ct.bezierCurveTo(526, 210, 550, 230 ,594,250);
+        ct.bezierCurveTo(650, 300, 620, 400 ,600,430);
+        ct.quadraticCurveTo(540, 505, 450, 450);
+        ct.closePath();
+        ct.fillStyle="#fff";
+        ct.fill();
+        ct.stroke();
+
+        //ປາກ 
+        ct.beginPath();
+        ct.moveTo(615,395);
+        ct.bezierCurveTo(580, 420, 510, 350,515,350);
+        ct.bezierCurveTo(510, 350, 510, 290,610,270);
+        ct.quadraticCurveTo(640, 320, 615, 395);
+        ct.fillStyle="red";
+        ct.fill();
+        ct.stroke();
+
+        //ແຂ້ວ 1
+        ct.beginPath();
+        ct.moveTo(515,340);
+        ct.lineTo(535,335);
+        ct.lineTo(530,315);
+        ct.lineTo(545,320);
+        ct.lineTo(545,305);
+        ct.lineTo(565,305);
+        ct.lineTo(565,290);
+        ct.lineTo(590,295);
+        ct.lineTo(590,280);
+        ct.lineTo(610,290);
+        ct.lineTo(610,270);
+        ct.quadraticCurveTo(550, 250, 510,345);
+        ct.closePath();
+        ct.fillStyle="#fff";
+        ct.fill();
+        ct.stroke();
+
+        //ແຂ້ວ 2
+        ct.beginPath();
+        ct.moveTo(620,370);
+        ct.lineTo(615,365);
+        ct.lineTo(615,395);
+        ct.lineTo(605,380);
+        ct.lineTo(590,400);
+        ct.lineTo(585,385);
+        ct.lineTo(575,395);
+        ct.lineTo(565,380);
+        ct.lineTo(555,385);
+        ct.lineTo(545,370);
+        ct.lineTo(535,370);
+        ct.quadraticCurveTo(610,440,620,375);
+        ct.fillStyle="#fff";
+        ct.fill();
+        ct.stroke();
+
+        //ຕາ
+        ct.beginPath();
+        ct.arc(495,310,10,0,2*Math.PI);
+        ct.fillStyle = "#000"
+        ct.fill();
+
+        //ຄີບປາ1
+        ct.beginPath();
+        ct.moveTo(492, 400);
+        ct.bezierCurveTo(550, 450, 540, 450 ,610,435);
+        ct.quadraticCurveTo(600, 410, 500, 350);
+        ct.fillStyle="blue";
+        ct.fill();
+        ct.stroke();
+        
+        
+        }
+function doramon0(){
+    ct.setTransform(1,0,0,1,0,0);
+    ct.translate(50,260);
+    var angle = -45*Math.PI/180;
+    ct.rotate(angle);
+    ct.scale(0.6,0.6);
+    drawstar();
+}
+doramon0();
+function doramon(){
+    ct.setTransform(1,0,0,1,0,0);
+    ct.translate(180,100);
+    var angle = 180*Math.PI/360;
+    ct.rotate(angle);
+    drawstar();
+}
+doramon();
+function doramon2(){
+    ct.setTransform(1,0,0,1,0,0);
+    ct.translate(700,-200);
+    ct.scale(1.3,1.3);
+    var angle = 120*Math.PI/360;
+    ct.rotate(angle);
+    drawstar();
+}
+doramon2();
+function shark(){
+    ct.setTransform(1,0,0,1,0,0);
+    ct.translate(-300,50);
+    ct.scale(2,2);
+    drawTree();
+}
+shark();
+function shark2(){
+    ct.setTransform(1,0,0,1,0,0);
+    var x=500; var y=300;
+    var width =100; var height =1;
+    ct.translate(x+.5*width, y+.5*height);
+    var angle = 180*Math.PI/360;
+    ct.rotate(angle);
+    drawTree();
+
+}
+shark2();
+
+        </script>
+</body>
+</html>

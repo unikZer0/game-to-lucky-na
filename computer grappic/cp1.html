@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="test" width="600" height="600"\>
+    <script>
+        let x = document.getElementById("test");
+        let xi = x.getContext("2d");
+        // draw 
+        //line
+        xi.beginPath();
+        xi.lineWidth = "5";
+        xi.moveTo(20,20);
+        xi.lineTo(20,100);
+        xi.lineTo(70,100);
+        xi.closePath();
+        xi.stroke();
+        xi.fillStyle = "Yellow";
+        xi.fill();
+        xi.strokeStyle ="red";
+        xi.stroke();
+        //cross line
+        //1st
+        xi.beginPath();
+        xi.lineWidth = "5";
+        xi.moveTo(100,75);
+        xi.lineTo(250,75);
+        xi.stroke();
+        //2nd
+        xi.beginPath();
+        xi.lineWidth = "5";
+        xi.moveTo(150,20);
+        xi.lineTo(250,150);
+        xi.stroke();
+
+        //rectingle
+        //1st
+        xi.beginPath();
+        xi.rect(350,50,100,100);
+        xi.fillStyle = "grey";
+        xi.fill();
+        //2nd
+        xi.beginPath();
+        xi.rect(335,40,100,100);
+        xi.fillStyle = "black";
+        xi.fill();
+
+        //circle
+        //half
+        xi.beginPath();
+        xi.arc(200,250,90,0, Math.PI/1);
+        xi.stroke();
+        //full
+        xi.beginPath();
+        xi.arc(400,250,90,0,2*Math.PI);
+        xi.stroke();
+        
+    </script>
+
+
+</body>
+</html>

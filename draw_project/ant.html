@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="draw" width="600" height="600" \>
+    <script>
+        let d= document.getElementById("draw");
+        let dr=d.getContext("2d");
+
+//tail
+        dr.beginPath();
+        dr.lineWidth="3";
+        dr.moveTo(390,390);
+        dr.lineTo(450,550);
+        dr.lineTo(590,570);
+        dr.lineTo(600,430);
+        dr.lineTo(490,290);
+        dr.fillStyle = "#EF913E ";
+        dr.fill();
+        dr.closePath();
+        dr.stroke();
+// body
+        dr.beginPath();
+        dr.lineWidth="3";
+        dr.roundRect(350,230,130,150,50);
+        dr.fillStyle = "#662511 ";
+        dr.fill();
+        dr.stroke();
+//head
+        dr.beginPath();
+        dr.arc(300,200,90,2,3*Math.PI);
+        dr.fillStyle = "#EF913E ";
+        dr.fill();
+        dr.stroke();
+// a
+        dr.moveTo(250,145);
+        dr.lineTo(150,100);
+        dr.lineTo(150,150);
+        dr.stroke();
+// b
+        dr.moveTo(255,155);
+        dr.lineTo(160,110);
+        dr.lineTo(158,155);
+        dr.stroke();
+// c
+        dr.moveTo(350,150);
+        dr.lineTo(450,100);
+        dr.lineTo(440,140);
+        dr.stroke();
+// d
+        dr.moveTo(360,160);
+        dr.lineTo(440,110);
+        dr.lineTo(430,140);
+        dr.stroke();
+//circle a
+        dr.beginPath();
+        dr.arc(150,165,20,0,2*Math.PI);
+        dr.fillStyle = "#81450F";
+        dr.fill();
+        dr.stroke();
+//circle b
+        dr.beginPath();
+        dr.arc(430,155,20,0,2*Math.PI);
+        dr.stroke();
+        dr.fillStyle = "#81450F";
+        dr.fill();
+//eye1
+        dr.beginPath();
+        dr.arc(260,190,30,0,2*Math.PI);
+        dr.fillStyle = "black";
+        dr.fill();
+        dr.stroke();
+
+        dr.beginPath();
+        dr.arc(260,200,10,0,2*Math.PI);
+        dr.fillStyle = "white";
+        dr.fill();
+        dr.stroke();
+//eye2
+        dr.beginPath();
+        dr.arc(330,190,30,0,2*Math.PI);
+        dr.fillStyle = "black";
+        dr.fill();
+        dr.stroke();
+
+        dr.beginPath();
+        dr.arc(325,200,10,0,2*Math.PI);
+        dr.fillStyle = "white";
+        dr.fill();
+        dr.stroke();
+
+//moute f1
+        dr.beginPath();
+        dr.lineWidth="3";
+        dr.moveTo(150,365);
+        dr.lineTo(260,240);
+        dr.lineTo(260,290);
+        dr.lineTo(240,290);
+        dr.lineTo(240,310);
+        dr.lineTo(220,310);
+        dr.lineTo(220,330);
+        dr.lineTo(200,330);
+        dr.lineTo(200,350);
+        dr.lineTo(180,350);
+        dr.lineTo(180,370);
+        dr.lineTo(170,375);
+        dr.fillStyle = "darkred";
+        dr.fill();
+        dr.closePath();
+        dr.stroke();
+//moute 2nd
+        dr.beginPath();
+        dr.lineWidth="3";
+        dr.moveTo(340,385);
+        dr.lineTo(340,240);
+        dr.lineTo(310,280);
+        dr.lineTo(320,300);
+        dr.lineTo(310,310);
+        dr.lineTo(320,330);
+        dr.lineTo(310,340);
+        dr.lineTo(320,350);
+        dr.lineTo(305,370);
+        dr.lineTo(320,390);
+        dr.fillStyle = "darkred";
+        dr.fill()
+        dr.closePath();
+        dr.stroke();
+
+// leg 1
+
+        dr.moveTo(380,300);
+        dr.lineWidth ="3";
+        dr.lineTo(380,450);
+        dr.lineTo(280,550);
+        dr.stroke();
+
+        dr.moveTo(370,300);
+        dr.lineWidth ="";
+        dr.lineTo(360,450);
+        dr.lineTo(270,550);
+        dr.stroke();
+// leg 2
+
+        dr.moveTo(410,330);
+        dr.lineWidth ="3";
+        dr.lineTo(410,470);
+        dr.lineTo(330,530);
+        dr.stroke();
+
+        dr.moveTo(420,330);
+        dr.lineWidth ="";
+        dr.lineTo(420,490);
+        dr.lineTo(350,530);
+        dr.stroke();
+// leg 3
+
+        dr.moveTo(450,350);
+        dr.lineWidth ="3";
+        dr.lineTo(480,470);
+        dr.lineTo(430,530);
+        dr.stroke();
+
+        dr.moveTo(460,360);
+        dr.lineWidth ="";
+        dr.lineTo(490,480);
+        dr.lineTo(450,530);
+        dr.stroke();
+/// back leg 1
+
+        dr.moveTo(320,300);
+        dr.lineTo(200,400);
+        dr.lineTo(250,500);
+        dr.stroke();
+
+        dr.moveTo(320,310);
+        dr.lineTo(210,400);
+        dr.lineTo(250,500);
+        dr.stroke();
+
+        
+    </script>
+</body>
+</html>
